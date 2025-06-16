@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: #71816D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #272727;
+}
+
+/*o id pode ser usado na CSS sem necessariamente colocar o nome da Tag. EX: ficaria #principal abaixo.*/
+h1#principal {
+    text-align: center;
+    background-color: #8f9aac;
+}
+
+/* 
+
+"id" em HTML e "#" em CSS
+em HTML é "Class" = em CSS é ".".
+
+
+*/
+
+
+.basico {
+    color: rgb(0, 97, 0)
+}
+
+.intermediario {
+    color: rgb(125, 73, 14)
+
+}
+
+.avancado {
+    color: #940c24
+
+}
+
+.destaque {
+    background-color: rgba(50, 83, 92, 0.363)
+}
+
+p {
+    color: ;
+}

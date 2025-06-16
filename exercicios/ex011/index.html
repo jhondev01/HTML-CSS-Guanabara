@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Conforme a imagem for diminuindo em largura vai se colando um sobre o outro, todos acima da "imagem base"-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível"> 
+    </picture>
+    <h1>Áudios</h1>
+    <p>Reprodução de áudios em HTML5.</p>
+    <h2>Duas maneiras &darr;</h2>
+    <ol>
+        <li>Maneira fácil/simples</li>
+        <code>
+          &lt;audio src=&quot;caminho e nome do teu som&quot; controls&gt;&lt;/audio&gt;
+        </code><br>
+        <audio src="midia/kissing-your-feet-everet-almond.mp3" controls></audio> <!--MP3 - WAV - OGG -->
+        <li>Maneira mais completa</li>
+        <p>Usando a tag &lt;audio&gt; e dentro dela &quot;source:src&quot;. Siga a linha de exemplo &darr;</p>
+        <pre>
+        <code>
+            &lt;audio preload=&quot;auto&quot; autoplay controls&gt;
+               &lt;source src="midia/kissing-your-feet-everet-almond.mp3" type="audio/mpeg"&gt;
+               &lt;source src="midia/kissing-your-feet-everet-almond.ogg" type="audio/ogg"&gt;
+               &lt;source src="midia/kissing-your-feet-everet-almond.wav" type="audio/wav"&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre> 
+    <p>No "preload" pode-se escolher entre: auto - metadata - none</p>
+        <audio preload="auto" autoplay controls>
+          <source src="midia/kissing-your-feet-everet-almond.mp3" type="audio/mpeg"> |<!--O navegador vai tentar reproduzir os áudios nesta ordem de cima para baixo-->
+          <source src="midia/kissing-your-feet-everet-almond.ogg" type="audio/ogg">
+          <!--Os dois formatos estão aqui apenas para mostrar que também são disponiveis no HTML5-->
+          <source src="midia/kissing-your-feet-everet-almond.wav" type="audio/wav">
+        </audio>
+        <p>Por algum motivo os áudios não estão reproduzindo automaticamente. Não deu certo nem com o professor.</p>
+        <p>*Atualização: tá tudo certo, era apenas o próprio navegador bloqueando a reprodução automática!</p>
+    </ol>
+    
+</body>
+</html>

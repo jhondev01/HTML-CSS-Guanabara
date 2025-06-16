@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {background-color: aqua;} 
+    </style> <!--exemplo de uso das CSS.-->
+</head>
+<body>
+    <h1>Pincipais Formatações</h1>
+    <h2>Negrito / Destaque</h2> 
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; apenas para dar ênfase visual</p> <!--Tag não semântica-->
+    <p>E nesta outra frase temos um <strong>termo em negrito</strong> usando a tag STRONG (semântica) trazendo o sentio de destaque, termo importante ("forte")
+    </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Agora temos um <i>termo em itálico</i> usando a tag I (Não sêmantica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK.</p> <!--é umatag HTML,e a cor padrão é amarelo, então para mudar a cor, que já entra no conceito de forma, é necessario o uso das CSS-->
+    <p>outro exemplo do <mark>texto marcado</mark> pra testar o funcinamento das CSS.</p>
+    <h2>Texto Grande e Pequeno</h2> 
+    <p>Isto é um exemplo de <big>texto grande</big> e <small>texto pequeno</small>, legal né?</p> 
+    <p>(não esqueça de dar uma olhada no código fonte para ver os comentários, principalmente deste exemplo e o uso de tags absoletas!</p>
+    <!-- A tag BIG está absoleta por se tratar meramente de forma (o que já é assunto das CSS) enquanto que SMALL ainda está em uso pela possibilidade de haver um "sentindo" no uso de letras pequenas, como no exemplo do professor, como em documentos, partes importantes de texto. Meio estranho kkk-->
+     <h2>Texto Deletado</h2>
+     <p>Um texto <del>que deve ser lido</del>, mas não considerado.(usando a tag DEL)</p>
+     <h2>Texto Inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. (uso da tag INS da semântica HTML)</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica, e por conta disso corre o risco de logo se considerar (pela W3C) obsoleta, por isso não é indicada o uso como um elemento da HTML5.) <!--Note o risco -->
+    </p>
+    <h2>Texto Sobrescrito</h2>
+    <p> Para inserir coisas do tipo x<sup>20</sup>+3 (tag SUP)</p> 
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O (tag SUB)</p>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Hospedado no meu próprio servidor</p>
+    <video src="midias/the-moon.mp4" width="560" controls autoplay poster="imagens/the-moon.jpg"></video>
+    <p> O video acima foi adicionado da seguinte forma &darr;</p>
+        <p>
+            <code>
+                &lt;video src="midias/the-moon.mp4" width="500" controls autoplay poster="imagens/the-moon.jpg"&gt;&lt;/video&gt;
+            </code>
+        </p>
+        <hr>
+        <video controls poster="imagens/chess.jpg" width="560">
+            <source src="midias/chess.mp4" type="video/mp4">
+            <source src="midias/Chess.webm" type="video/webm">
+            <source src="midias/Chess.ogv" type="video/ogv"><p>Se não apareceu vídeo significa que teu navegador é uma merda</p>
+        </video>
+        <p>O video acima foi da seguinte maneira &darr;</p>
+        <p>
+            <pre><code>
+                &lt;video controls poster="imagens/chess.jpg" width="500"&gt;
+                    &lt;source src="midias/chess.mp4" type="video/mp4"&gt;
+                    &lt;source src="midias/Chess.webm" type="video/webm"&gt;
+                    &lt;source src="midias/Chess.ogv" type="video/ogv"&gt;&lt;p&gt;Mensagem de erro: Se não apareceu vídeo significa que teu navegador é uma merda!&lt;/p>
+                &lt;/video>
+            </code>
+        </pre>            
+        </p>
+        <p>Caso o primeiro formato não funcione de primeira, os navegadores vão testando formato por formato na ordem de cima para baixo </p>
+        <h1>Inserindo Vídeos Externos/YouTube &darr;</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5cCEw9Tageg?si=G72Gl-E77iDO_M72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>
