@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de Imagem</title>
+    <style>
+        body {
+            height: 98vh; /*vh - da -> "viewport"*/
+            border: 1px dashed red;
+           
+            
+        }
+
+        div.mascote {
+            background-color: aquamarine;
+            height: 98vh; /*vh - da -> "viewport"*/
+            border: 1px dashed red;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 300px;
+            background-repeat: no-repeat;
+            /*Não especifiquei o backgroundo position nesta class porque quero justamente que a posição desta primeira div seja a padrão 'left top'*/
+        }
+
+        div#m2 {
+            background-color: rgb(216, 138, 138);
+            background-position: center center;
+            background-repeat: no-repeat;
+
+        }
+
+        div#m3 {
+            background-color: rgb(174, 195, 157);
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="mascote">
+        <h1 style="color: white; text-shadow: 2px 2px 2px black;">top left</h1>
+
+    </div>
+    <div class="mascote" id="m2">
+        <h1 style="color: white; text-align: center; text-shadow: 2px 2px 2px black;">center center</h1>
+
+    </div>
+    <div class="mascote" id="m3">
+        <h1 style="color: white; text-align: right; text-shadow: 2px 2px 2px black;">top right</h1>
+
+    </div>
+</body>
+</html>
