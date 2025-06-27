@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        
+        tr.tr1 {
+            background-color: red;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td#tdg {
+            background-color: blue;
+        }
+
+        table.stb {
+            height: 400px;
+        }
+
+        table.stb  td {
+            text-align: center; /*Alinhamento Horizontal*/
+            vertical-align: top; /*Alinhamento Vertical*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Primeira Tabela</h1>   
+    <!--Hierarquia de Tabelas Simples
+        TABLE -> tabela
+       tr -> TABLE ROW -> linha de tabela
+                >> TABLE HEADER = cabeçalho de tabela
+          td -> >> TABLE DATA = dado de tabela -->
+    <table>
+        <tr class="tr1"> <!--primeira linha-->
+            <td>A1</td> <!--TABLE DATA-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td id="tdg">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <h2>Tabela Simples</h2>
+    <p>Toda as linhas horizontais, como a primeira linha destacada (de vermelho), em HTML se chama, em inglês, <strong style="color: red;"><i>TABLE ROW</i></strong> (tag: &#8826;tr&#8827;)</p>
+    <p>O item/dado dentro da tabela, como o destado em azul na terceira linha (tr), leva o nome <strong style="color: blue;"><i>TABLE DATA</i></strong> (dado de tabela, tag: &#8826;td&#8827;)</p>
+    <p style="color: green; font-weight: bolder;"><i>OBS:</i> segundo a W3C as tags &#8826;tr&#8827; e &#8826;tr&#8827; não necessitam de tags de fechamento para funcionar, ficando a disposição do desenvolver optar por usá-las ou não.</p>
+    <h1>Alinhamento</h1>
+    <p>A tabela com a configuração de tamanho: 400x400 em pixels</p>
+        <table class="stb">
+        <tr> <!--primeira linha-->
+            <td>A1</td> <!--TABLE DATA-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <p><strong>Alinhamento Horizontal</strong>: usei o <strong style="color: blue;"">text-align:</strong> <i style="color: orangered;">center</i> para td, já que por padrão ela vem como "<i>left</i>".</p>
+    <p><strong>Alinhamento Vertical</strong>: usei <strong style="color: blue;">vertical-align</strong>: <i style="color: orangered;">top</i> para td, visto que por padrão, ele vem como "<i>middle</i>".</p>
+</body>
+</html>
