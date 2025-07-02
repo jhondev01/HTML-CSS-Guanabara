@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 1000px;
+            margin: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        div.cdg {
+            color: blue;
+            font-weight: bolder; 
+            font-size: 18px;"
+        }
+
+        .cdg#red {
+            color: red;
+            padding-bottom: 20px;
+        }
+
+        #tb2 {
+            width: 100%;
+        }
+
+        #tb2 td {
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Mesclagem de Células</h1>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2" style="background-color: blue; color: white;" >B</td>
+        
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: red; color: white;">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+        <h2>COLSPAN</h2>
+        <p>para letra B ocupar duas colulas, usei na própria tag de abertura (sem CSS):</p>
+        <div class="cdg">&lt;td colspan= "2"&gt;</div>
+        <H2>ROWSPAN</H2>
+        <p>A letra D ocupa apenas uma coluna, mas toma três linhas, nesse caso usa-se ROWSPAN de forma semelhante ao anterio, acrestando a qt. de linhas:</p>
+        <div class="cdg" id="red">&lt;td rowspan= "2"&gt;</div>
+
+        <table id="tb2">
+            <tr>
+                <td colspan="3" rowspan="3" style="background-color: orangered;">1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td rowspan="5" style="background-color: brown">6</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background: blueviolet;">2</td>
+                <td>0</td>
+                <td rowspan="3" style="background-color: brown;">3</td>
+                <td rowspan="3" style="background-color: aqua;">4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td rowspan="2" style="background-color: palevioletred;">5</td>
+            </tr>
+            <tr>
+                <td>0</td>
+            </tr>
+        </table>
+    </main>
+
+
+
+    
+</body>
+</html>
