@@ -6,14 +6,27 @@
     <title>Estudos de iframe</title>
 </head>
 <body>
+    <!--Frameborder - borda do Iframe se = 0 não haverá bordas. Senão, ou seja, qualquer outro número, surgirá uma borda de 1px -->
     <h1>Uso de um iframe</h1>
     <p>Site do 
         
-        <iframe src="https://cursoemvideo.com">
+        <iframe src="https://cursoemvideo.com" frameborder="0">
+            <a href="https://cursoemvideo.com">Curso em Video</a>
 
         </iframe>
         
         para aprender a programar
+    </p>
+
+    <p>
+        O repositório do Guanabara
+   <!--Tamanho do Iframe se ajusta com "width" e "height". O tamanho padrão é 300x150 -->
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="400px" width="250px" scrolling="no">
+            <!--Scrolling define o uso da barra lateral-> "AUTO" é o padrão, ou seja com scrolling se necessário. "YES" ativa o scrolling (independente se o conteudo estiver cabendo bem no frame), e "NO" tira a função (mesmo que seja necessario pra navegação)-->
+            <a href="https://gustavoguanabara.github.io"> no Github</a>
+        </iframe>
+
+        também é da hora
     </p>
 </body>
 </html>
