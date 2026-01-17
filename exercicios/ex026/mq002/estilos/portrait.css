@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*Ajustes / PORTRAIT MODE*/
+
+body {
+    background-image:url(../Imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
