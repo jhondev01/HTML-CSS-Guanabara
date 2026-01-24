@@ -7,11 +7,11 @@
 }
 
 body, html {
-    background-color: #99af9d;
+    background-color: #17598c;
 }
 
 header {
-    background-color: #066f16;
+    background-color: #6da6c1;
 }
 
 header  > h1 {
@@ -20,7 +20,7 @@ header  > h1 {
 }
 
 span#bgr {
-    background-color: #242424;
+    background-color: #000000;
     color: #fff;
     display: block;
     padding: 10px;
@@ -29,8 +29,8 @@ span#bgr {
 }
 
 span#bgr:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 
 
 }
@@ -48,13 +48,13 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: #064107;
+    background-color: #043b58;
     color: #fff;
     border-top: 2px solid gray ;
 }
 
 menu > ul > li > a:hover {
-    background-color: #669d6f;
+    background-color: #668b9d;
 }
 
 main {
@@ -64,6 +64,7 @@ main {
     margin-top:10px;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 15px 10px rgb(10, 61, 97)
 }
 
 article > h2 {
