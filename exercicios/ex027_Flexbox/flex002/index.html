@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Flexível</title>
+    <style>
+        
+
+        div.conteiner1 { /* Pai */
+            background-color: aquamarine;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.conteiner2 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.conteiner3 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.conteiner4 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.item { /* Filho */
+            background-color: #dcf5ec;
+            border:1px solid black;
+            text-align: center;
+            padding: 10px;
+
+            
+        }
+
+        code {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            
+        }
+
+
+        span.directions {
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estudo de Eixos - FLexbox</h1>
+    <h2>Exemplo 01</h2>
+
+    <pre>
+        div.conteiner1 {
+            background-color: aquamarine;
+
+            
+                <code>
+                    display: flex;
+                    flex-direction: row;</code>
+                
+            
+        }
+    </pre>
+        <div class="conteiner1">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+        <ul>
+            <li><p>Neste caso o MAIN-AXI será da esquerda para a direita <span class="directions">&rarr;</span> </li>
+            <li><p>CROSS-AXI de cima para baixo <span class="directions">&darr;</span></p></li>
+        </ul>
+
+    <h2>Exemplo02</h2>
+        <pre>
+            div.conteiner2 {
+
+                <code>
+                    display: flex;
+                    flex-direction: row-reverse;</code>
+                
+            }
+        
+        </pre>
+
+         <div class="conteiner2">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+        <ul>
+            <li><p>Neste caso o MAIN-AXI será da direita para a esquerda <span class="directions">&larr;</span> </li>
+            <li><p>CROSS-AXI de baixo para cima <span class="directions">&uarr;</span></p></li>
+        </ul>
+
+        <h2>Exemplo 03</h2>
+
+        <pre>
+            div.conteiner3 {
+                background-color: aquamarine;
+                
+                <code>display: flex;
+                flex-direction: column;</code>
+                
+            }
+        </pre>
+
+        <div class="conteiner3">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+         <ul>
+            <li><p>Neste caso o MAIN-AXI será de cima para baixo <span class="directions">&darr;</span> </li>
+            <li><p>CROSS-AXI da esquerda para direita <span class="directions">&rarr;</span></p></li>
+        </ul>
+
+        <h2>Exemplo 04</h2>
+
+        <pre>
+            div.conteiner4 {
+              background-color: aquamarine;
+
+              <code>display: flex;
+              flex-direction: column-reverse;</code>
+
+            }
+        </pre>
+
+        <div class="conteiner4">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+        <ul>
+            <li><p>Neste caso o MAIN-AXI será de baixo para cima <span class="directions">&uarr;</span> </li>
+            <li><p>CROSS-AXI da esquerda para direita <span class="directions">&rarr;</span></p></li>
+        </ul>
+
+
+
+        
+
+</body>
+</html>

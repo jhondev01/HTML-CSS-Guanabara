@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Flexível</title>
+    <style>
+        
+
+        div.conteiner1 { /* Pai */
+            background-color: aquamarine;
+
+            display: flex;
+        }
+
+        div.conteiner2 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.conteiner3 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        div.conteiner4 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.item { /* Filho */
+            background-color: rgb(220, 245, 236);
+            border:1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+
+        code {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Primeiro exemplo do uso de Flexbox</h1>
+        <div class="conteiner1">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+        <p>As letras, que são os itens, estão cada uma em divs próprias dentro da div principal pai/ o &rAarr; <span style="text-decoration: underline;">conteiner</span></p>
+        <p>Então conteiner recebe <code>display:flex;</code></p>
+        <p>Os filhos/Itens recebem <code>flex:auto;</code></p>
+        <p><code>flex-direction</code> está na padrão aqui. Ou seja <code>flex-direction:row;</code> (esquerda para direita)</p>
+
+        <h1>Direções flexbox</h1>
+        <h2>row</h2>
+        <p>O exemplo acima. É o padrão, se não especificado nas CSS</p>
+        <h2>row-reverse</h2>
+        <p>Irá invertar a ordem dos itens (direita-esquerda) na linha/fileira. Exemplo:</p>
+        <div class="conteiner2">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+        <p> <code>flex-direction:row-reverse;</code> na div conteiner. APRENDER ficou invertido por conta disso.</p>
+
+        <h2>column</h2>
+        <p>Itens se organizarão em coluna. O padrão é de cima para baixo</p>
+
+        <div class="conteiner4">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+        <h2>column-reverse</h2>
+        <p>Irá inverter a ordem dos itens na coluna (obviamente kkk). Se organizarão de baixo para cima</p>
+
+        <div class="conteiner4">
+            <div class="item" >A</div>
+            <div class="item">P</div>
+            <div class="item">R</div>
+            <div class="item">E</div>
+            <div class="item">N</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">R</div>
+        </div>
+
+</body>
+</html>
