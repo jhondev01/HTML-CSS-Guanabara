@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #6262a3;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    overflow: hidden;
+
+    background-color: #fff;
+    width: 265px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000097;
+
+    transform: translate(-50%, -50% );
+    transition: width .3s, height .3s;
+    transition-timing-function: ease; /*suavidade no movimento/transição*/
+    
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #6262a3 url(../imagens/bdimage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: #fff;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #a5c5a5;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-12px);
+
+    
+}
+
+div.campo > input:focus-within {
+    background-color: #fff;
+
+}
+
+form > div.campo {
+    background-color: #6262a3;
+    display: block;
+    border-radius: 5px;
+    margin: 5px 0px;
+    width: 100%;
+    height: 40px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #548454;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2a502a;
+}
+
+form > a.rmbutton {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 5px;
+    height: 40px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+}
+
+form > a.rmbutton:hover {
+    background-color: #ffffff;
+}
+
+form > a.rmbutton > span {
+    font-size: 0.8em;  
+}
