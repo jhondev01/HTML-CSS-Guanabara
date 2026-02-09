@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização com Flexbox</title>
+    <style>
+         body , html {
+            background-image: linear-gradient(to top, rgb(35, 93, 113), rgb(73, 140, 122));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 0px 0px 10px black;
+            
+        }
+
+        button {
+            box-shadow: 2px 15px 10px rgba(19, 19, 19, 0.453);
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(180, 180, 206);
+        }
+
+        button:hover {
+            background-color: rgb(19, 208, 142);
+            color: white;
+            cursor: pointer;
+        }
+
+        h1 {
+            background-color: aliceblue;
+            color: rgb(8, 64, 72);
+            text-shadow: none;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            margin: auto;
+            width: 700px;
+        }
+
+        div#pai1 {
+            height: 90vh;
+            width: 70vw;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(7, 92, 92);
+        }
+
+        div.filhos {
+            background-image: url(imgs/Linux-Logo-1996.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 420px;
+            height: 420px;
+            font-size: 350px;
+        
+        }
+
+        code {
+            font-size: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <a href="ALinhamento_nos_Eixos.html"><button>&lArr;Anterior</button></a>
+    <a href="#"><button>próximo &rAarr;</button></a>
+    <h1>Centralização com Flexbox</h1>
+    <p>>>para centralizar o Tux usei simplesmente: </p>
+    <br>
+    <p><code>justify-content: center;</code></p>
+    <p><code>align-items:center;</code></p>
+    <br>
+    <div id="pai1">
+        <div class="filhos"></div>
+    </div>
+</body>
+</html>
